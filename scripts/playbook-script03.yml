@@ -1,0 +1,20 @@
+---
+- name: Playbook that runs a Perl script
+  hosts: localhost
+  connection: ansible.builtin.local
+  gather_facts: false
+  vars:
+    urltolookup: "https://pokeapi.co/api/v2/pokemon/pikachu"
+
+  tasks:
+  - name: lookup Pokeapi
+    uri:
+      url: "{{ urltolookup }}"
+      method: GET
+    register: results    # save the JSON sent back by our script
+
+  - name: Print out the 'results'
+    ansible.builtin.debug:
+      var: results
+      # notice there is a stdout and stdout_lines
+
