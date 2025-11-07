@@ -1,0 +1,58 @@
+[1;35m[WARNING]: Collection community.general does not support Ansible version[0m
+[1;35m2.15.13[0m
+
+PLAY [Run this in check mode] **************************************************
+
+TASK [Gathering Facts] *********************************************************
+[0;32mok: [idrac-host1][0m
+
+TASK [Get server information] **************************************************
+[0;32mok: [idrac-host1][0m
+
+TASK [Display the _info we just collected] *************************************
+[0;32mok: [idrac-host1] => {[0m
+[0;32m    "results.redfish_facts.cpu.entries": [[0m
+[0;32m        [[0m
+[0;32m            {[0m
+[0;32m                "system_uri": "/redfish/v1/Systems/437XR1138R2"[0m
+[0;32m            },[0m
+[0;32m            [[0m
+[0;32m                {[0m
+[0;32m                    "Id": "CPU1",[0m
+[0;32m                    "Manufacturer": "Intel(R) Corporation",[0m
+[0;32m                    "MaxSpeedMHz": 3700,[0m
+[0;32m                    "Model": "Multi-Core Intel(R) Xeon(R) processor 7xxx Series",[0m
+[0;32m                    "Name": "Processor",[0m
+[0;32m                    "ProcessorArchitecture": "x86",[0m
+[0;32m                    "Status": {[0m
+[0;32m                        "Health": "OK",[0m
+[0;32m                        "State": "Enabled"[0m
+[0;32m                    },[0m
+[0;32m                    "TotalCores": 8,[0m
+[0;32m                    "TotalThreads": 16[0m
+[0;32m                },[0m
+[0;32m                {[0m
+[0;32m                    "Id": "CPU2",[0m
+[0;32m                    "Name": "Processor",[0m
+[0;32m                    "Status": {[0m
+[0;32m                        "State": "Absent"[0m
+[0;32m                    }[0m
+[0;32m                },[0m
+[0;32m                {[0m
+[0;32m                    "Id": "FPGA1",[0m
+[0;32m                    "Manufacturer": "Intel(R) Corporation",[0m
+[0;32m                    "Model": "Stratix 10",[0m
+[0;32m                    "Name": "FPGA",[0m
+[0;32m                    "ProcessorArchitecture": "OEM",[0m
+[0;32m                    "Status": {[0m
+[0;32m                        "Health": "OK",[0m
+[0;32m                        "State": "Enabled"[0m
+[0;32m                    }[0m
+[0;32m                }[0m
+[0;32m            ][0m
+[0;32m        ][0m
+[0;32m    ][0m
+[0;32m}[0m
+
+PLAY RECAP *********************************************************************
+[0;32midrac-host1[0m                : [0;32mok=3   [0m changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
